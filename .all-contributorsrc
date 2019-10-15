@@ -1,0 +1,23 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Shanmuk-palnati",
+      "name": "Shanmuk-palnati",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/56579843?v=4",
+      "profile": "https://github.com/Shanmuk-palnati",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Pattern-printing-with-C",
+  "projectOwner": "rahulparshi",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
