@@ -1,6 +1,6 @@
 # Pattern-printing-with-C [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](http://www.firsttimersonly.com/)
 
-Printing capital alphabets with C language.
+Printing capital alphabets with stars in C language.
 
 ```C
 Sample input
@@ -34,5 +34,7 @@ Please **use a branch** and [create a PR](https://help.github.com/articles/creat
 Haven't time to code it? Please open an [issue](https://github.com/rahulparshi/Pattern-printing-with-C/issues/new).
 
 Use branch name and file name in **`Individual patterns`** directory same as the pattern name like (k.c, J.c).
+
+**`Note:`** Claim issue on your name before start working on it.
 
 Thank you for taking the time to contribute! 👍
