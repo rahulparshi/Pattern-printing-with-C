@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
     int n, mid, l;
+    char character = '*'; //instead of hard coding star character used a varaible.
     //n- Number of rows in the output
     //l- input length
     scanf("%d %d\n", &n, &l);
@@ -17,21 +19,21 @@ int main()
             switch (a[k])
             {
             case 'E':
-                printf("*");
+                printf("%c", character);
                 for (int j = 1; j < n; j++)
                 {
                     if (i == 1 || i == n || i == mid)
-                        printf("*");
+                        printf("%c", character);
                     else
                         printf(" ");
                 }
                 break;
             case 'F':
-                printf("*");
+                printf("%c", character);
                 for (int j = 1; j < n; j++)
                 {
                     if (i == 1 || i == mid)
-                        printf("*");
+                        printf("%c", character);
                     else
                         printf(" ");
                 }
@@ -40,29 +42,29 @@ int main()
                 if (i == 1 || i == n)
                 {
                     for (int j = 1; j <= n; j++)
-                        printf("*");
+                        printf("%c", character);
                 }
                 else
                 {
                     for (int j = 1; j < mid; j++)
                         printf(" ");
-                    printf("*");
+                    printf("%c", character);
                     for (int j = mid + 1; j <= n; j++)
                         printf(" ");
                 }
                 break;
             case 'L':
-                printf("*");
+                printf("%c", character);
                 for (int j = 1; j < n; j++)
                 {
                     if (i != n)
                         printf(" ");
                     else
-                        printf("*");
+                        printf("%c", character);
                 }
                 break;
             case 'M':
-                printf("*");
+                printf("%c", character);
                 if (i == 1 || i > mid)
                 {
                     for (int j = 1; j <= n - 2; j++)
@@ -72,53 +74,72 @@ int main()
                 {
                     for (int j = 1; j <= i - 2; j++)
                         printf(" ");
-                    printf("*");
+                    printf("%c", character);
 
                     for (int j = 1; j <= n - 2 * i; j++)
                         printf(" ");
 
                     if (i != mid)
-                        printf("*");
+                        printf("%c", character);
                     if (i == mid && n % 2 == 0)
-                        printf("*");
+                        printf("%c", character);
 
                     for (int j = 1; j <= i - 2; j++)
                         printf(" ");
                 }
-                printf("*");
+                printf("%c", character);
                 break;
+                case 'Y':
+                for(int j=1;j<=n;j++)
+                {
+                   if(i<=mid)
+                   {
+                       if(j==i || j==n-i+1)
+                         printf("%c",character);
+                       else 
+                         printf(" ");
+                    }
+                    else
+                    {
+                    if(j==mid)
+                       printf("%c",character);
+                    else
+                       printf(" ");
+                    }
+                }
+                break;  
             case 'Z':
                 if (i == 1 || i == n)
                 {
                     for (int j = 1; j <= n; j++)
-                        printf("*");
+                        printf("%c", character);
                 }
                 else
                 {
                     for (int j = 1; j <= n - i; j++)
                         printf(" ");
-                    printf("*");
+                    printf("%c", character);
                     for (int j = 1; j < i; j++)
                         printf(" ");
                 }
                 break;
             case 'X':
-		for(i=0; i < n; i++)
-		{
-		    for(int j = 0; j < n; j++)
-		    {
-			if(i==j || j==(n-i-1))
-			{
-			    printf("*");
-			}
-			else
-			{
-			    printf(" ");
-			}
-		    }
-		    printf("\n");
-		}
-            	break;
+                for(int j = 0; j < n; j++)
+                {
+                    if(i == j || j == (n-i))
+                    {
+                        printf("%c", character);
+                    }
+                    else
+                    {
+                        printf(" ");
+                    }
+                    if (i == n && j+1 == n)
+                    {
+                        printf("%c", character);
+                    }
+                }
+                break;
             }
             printf("  ");
         }
