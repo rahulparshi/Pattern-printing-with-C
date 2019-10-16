@@ -1,0 +1,23 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "nymika",
+      "name": "nymika",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/43992470?v=4",
+      "profile": "https://github.com/nymika",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Pattern-printing-with-C",
+  "projectOwner": "rahulparshi",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
