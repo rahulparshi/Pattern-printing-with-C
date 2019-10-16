@@ -89,6 +89,25 @@ int main()
                 }
                 printf("%c", character);
                 break;
+                case 'Y':
+                for(int j=1;j<=n;j++)
+                {
+                   if(i<=mid)
+                   {
+                       if(j==i || j==n-i+1)
+                         printf("%c",character);
+                       else 
+                         printf(" ");
+                    }
+                    else
+                    {
+                    if(j==mid)
+                       printf("%c",character);
+                    else
+                       printf(" ");
+                    }
+                }
+                break;  
             case 'Z':
                 if (i == 1 || i == n)
                 {
