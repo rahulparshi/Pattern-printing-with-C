@@ -3,11 +3,11 @@
 
 int main() {
 
-    int i,j,n;
-    scanf("%d",&n);
+    int i,j,n=5;
+    /*scanf("%d",&n);*/
     for(i=0;i<n;i++){
         for(j = 0;j<n;j++){
-            if(abs((n-1)-i) == j || i == j)printf("*");
+            if(abs(i(n-1)) == j || i == j)printf("*");
            
             else
                 printf(" ");
